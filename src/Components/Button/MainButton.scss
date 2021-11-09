@@ -1,0 +1,11 @@
+@import '/src/Style Assets/variables';
+
+.btn-main{
+    background: linear-gradient(120deg,$lightOrange, $rose ,$rose,$violet 100%);
+    border: 0;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}

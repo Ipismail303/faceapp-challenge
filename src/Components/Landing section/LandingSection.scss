@@ -1,0 +1,39 @@
+@import '/src/Style Assets/variables';
+
+.landing-section{
+    margin-top: 6rem;
+    .landing-wrapper{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "content image";
+        grid-template-rows: 90vh;
+    }
+    
+    .landing-content{
+        display: grid;
+        grid-area: content;
+        place-items: center;
+        background: $gary;
+    }
+
+    .main-header{
+        font-weight: bold;
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+    p{
+        color: $gray;
+    }
+    .main-description{
+        margin-bottom: 2rem;
+    }
+    .landing-image{
+        grid-area: image;
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+    }
+
+}
