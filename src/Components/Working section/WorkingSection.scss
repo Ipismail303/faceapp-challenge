@@ -1,0 +1,35 @@
+@import '/src/Style Assets/variables';
+
+.working-section{
+    margin: 5rem 0;
+    .working-section-wrapper{
+        width: 90%;
+        margin: auto;
+    }
+    .working-heading{
+        width: 100%;
+        text-align:center;
+        font-size: 2.5rem;
+        color: #222;
+        margin: 1rem 0;
+    }
+    .working-description{
+        color: $gray;
+        width: 100%;
+        text-align: center;
+    }
+    .working-card-wrapper{
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 5rem;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+    .how-it-work-path{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}

@@ -8,7 +8,7 @@ export default function Header() {
             <div className="header-wrapper">
                 <img src="/images/fastpay - logo.svg" className="header-logo" alt="" />
                 <ul className="header-nav-links">
-                    <li className="link">Home</li>
+                    <li className="link active-link">Home</li>
                     <li className="link">About</li>
                     <li className="link">Features</li>
                     <li className="link">Pricing</li>

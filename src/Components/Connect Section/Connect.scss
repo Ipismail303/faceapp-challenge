@@ -1,0 +1,42 @@
+@import '/src/Style Assets/variables';
+
+.connect-section{
+    .connect-section-wrapper{
+        max-width: 1400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr );
+        grid-template-rows: 90vh;
+        grid-template-areas: "connect-content connect-image";
+    }
+    .connect-img{
+        max-width:100%;
+        max-height: 100%;
+        object-fit: cover;
+        grid-area: connect-image;
+        align-self: center;
+        justify-self: center;
+    }
+    .connect-content{
+        grid-area: connect-content;
+        display: grid;
+        place-items: center;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        margin: 2rem 0;
+    }
+    .btn-connect-start{
+        padding:1rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 2px solid $rose;
+        border-radius: 20px;
+        margin: 1rem 0;
+    }
+}

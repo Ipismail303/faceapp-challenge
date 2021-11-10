@@ -1,3 +1,5 @@
+@import '/src/Style Assets/variables';
+
 .header{
     background: #fff;
     height: 6rem;
@@ -7,6 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 
     .header-wrapper{
         width: 90%;
@@ -21,6 +24,24 @@
     }
     .link{
         margin-left: 4rem;
+        color: $gray;
+        cursor: pointer;
+    }
+    .active-link{
+        color: #000;
+        position: relative;
+        display: flex;
+        &::after{
+            content: "";
+            width: 2rem;
+            height: 4px;
+            background: $rose;
+            position: absolute;
+            bottom: 0;
+            border-radius: 20rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     .login-links{
         display: flex;
